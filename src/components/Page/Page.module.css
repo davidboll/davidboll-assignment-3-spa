@@ -1,0 +1,13 @@
+.container {
+  flex: 1;
+  margin: 20px auto;
+  max-width: 1200px;
+  padding: 20px;
+  text-align: center;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}

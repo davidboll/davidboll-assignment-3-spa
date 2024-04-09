@@ -1,0 +1,46 @@
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/src/assets/images/cover-home.jpg");
+  background-position: center;
+  background-size: cover;
+  color: white;
+  height: 200px;
+  padding: 10px 0;
+  position: relative;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.title {
+  font-size: 2rem;
+  position: relative;
+  padding: 0 10px;
+  text-align: center;
+  z-index: 2;
+}
+
+@media (min-width: 768px) {
+  header {
+    flex-direction: row;
+    justify-content: center;
+    height: 350px;
+    padding: 20px 0;
+  }
+
+  .title {
+    font-size: 4rem;
+    padding: 0;
+  }
+}
