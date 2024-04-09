@@ -3,3 +3,14 @@
   text-align: justify;
   color: #333;
 }
+
+.welcomeImage {
+  height: auto;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .welcomeImage {
+    width: 500px;
+  }
+}
